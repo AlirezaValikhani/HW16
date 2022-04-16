@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .image {
+            height: 1080px;
+            width: 1920px;
+            background-image: url('https://wallpapershome.com/images/pages/pic_h/23847.jpg');
+            background-repeat: no-repeat;
+            background-size: 1920px 1080px;
+        }
+        .container {
+            background: inherit;
+            position: center;
+            width: 45%;
+            height: 60%;
+            margin: 200px 500px;
+            content: '';
+            backdrop-filter: blur(5px);
+            top: 100%;
+            left: 100%;
+            right: 33%;
+            bottom: 10%;
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+            
+        }
+        h1 {
+            text-align: center;
+            line-height: 180px;
+            font-size: 100px;
+            font-weight: 500;
+        }
+        form {
+            background-size: cover;
+            padding: 100px 0;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+        form,input,label,button{
+            display: block;
+            width: 80%;
+            margin-left: 80px;
+            text-align: center;
+            font-size: 25px;
+            vertical-align: center;
+            margin-bottom: 100px;
+        }
+        label{
+            font-size: 40px;
+            display: block;
+            margin-top: 9px;
+            font-weight: 500;
+        }
+        input{
+            display: block;
+            height: 100px;
+            width: 120%;
+            background-color: rgba(255,255,255,0.07);
+            border-radius: 3px;
+            margin-left: 8px;
+            font-size: 40px;
+            font-weight: 400;
+        }
+        ::placeholder{
+            color: white;
+            font-size: 40px;
+            margin-right: 140px;
+        }
+        button{
+            margin-top: 50px;
+            width: 100%;
+            background-color: purple;
+            color: black;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="image">
+<div class="container">
+    <h1><b>Login</b></h1>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" class="inputText" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+        <button>Log In</button>
+    </form>
+</div>
+</body>
+</html>
